@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Empresa</title>
+    <title>Diversos - Empresa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <style>
@@ -24,8 +24,8 @@
             color: var(--secondary-color) !important;
         }
         
-        .about-hero {
-            background-color: #f8f9fa;
+        .diversos-hero {
+            background-color: #e9ecef;
             padding: 80px 0;
         }
         
@@ -33,6 +33,11 @@
             background-color: var(--primary-color);
             color: white;
             padding: 40px 0 20px;
+        }
+        
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -51,10 +56,10 @@
                         <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="sobre.html">SOBRE</a>
+                        <a class="nav-link" href="sobre.html">SOBRE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="diversos.html">DIVERSOS</a>
+                        <a class="nav-link active" href="diversos.html">DIVERSOS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contato.html">CONTATO</a>
@@ -64,83 +69,105 @@
         </div>
     </nav>
 
-    <section class="about-hero">
+    <section class="diversos-hero">
         <div class="container text-center">
-            <h1 class="display-4">Sobre Nossa Empresa</h1>
-            <p class="lead">Conheça nossa história, missão e valores</p>
+            <h1 class="display-4">Conteúdos Diversos</h1>
+            <p class="lead">Artigos, notícias e informações relevantes</p>
         </div>
     </section>
 
     <main class="container my-5">
         <div class="row">
-            <div class="col-lg-6">
-                <h2>Nossa História</h2>
-                <p>Fundada em 2010, nossa empresa surgiu com o objetivo de transformar o mercado através de soluções inovadoras. Começamos como uma pequena startup e hoje somos referência no segmento.</p>
-                <p>Ao longo dos anos, desenvolvemos centenas de projetos para clientes de diversos segmentos, sempre priorizando a qualidade e a satisfação dos nossos clientes.</p>
+            <div class="col-lg-8">
+                <h2>Últimas Notícias</h2>
                 
-                <div class="accordion mt-4" id="historyAccordion">
+                <div class="accordion mb-4" id="newsAccordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                                2010 - Fundação
+                                Novas Tecnologias 2023
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show">
                             <div class="accordion-body">
-                                <p>Em 2010, fundamos a empresa com foco em soluções tecnológicas inovadoras.</p>
+                                <p>As tendências tecnológicas que estão moldando o futuro dos negócios em 2023.</p>
+                                <a href="#" class="btn btn-sm btn-primary">Ler mais</a>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                                2015 - Expansão
+                                Sustentabilidade Corporativa
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                <p>Em 2015, expandimos nossas operações para todo o território nacional.</p>
+                                <p>Como as empresas podem adotar práticas sustentáveis e ainda aumentar a lucratividade.</p>
+                                <a href="#" class="btn btn-sm btn-primary">Ler mais</a>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                                2020 - Consolidação
+                                Gestão de Equipes Remotas
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                <p>Em 2020, nos consolidamos como líderes de mercado no segmento.</p>
+                                <p>Estratégias eficazes para gerenciar equipes em trabalho remoto ou híbrido.</p>
+                                <a href="#" class="btn btn-sm btn-primary">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2 class="mt-5">Galeria de Projetos</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Projeto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto Alpha</h5>
+                                <p class="card-text">Solução completa para gestão empresarial.</p>
+                                <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Projeto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto Beta</h5>
+                                <p class="card-text">Plataforma de e-commerce personalizada.</p>
+                                <a href="#" class="btn btn-primary">Ver detalhes</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <h2>Nossos Valores</h2>
-                <div class="card mb-3">
+            
+            <div class="col-lg-4">
+                <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Inovação</h5>
-                        <p class="card-text">Buscamos constantemente novas soluções e abordagens para os desafios dos nossos clientes.</p>
+                        <h5 class="card-title">Eventos Próximos</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Workshop Inovação - 25/10/2023</li>
+                            <li class="list-group-item">Feira de Tecnologia - 15/11/2023</li>
+                            <li class="list-group-item">Conferência Digital - 05/12/2023</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Qualidade</h5>
-                        <p class="card-text">Comprometemo-nos com a excelência em todos os produtos e serviços que oferecemos.</p>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Ética</h5>
-                        <p class="card-text">Atuamos com transparência e integridade em todas as nossas relações.</p>
-                    </div>
-                </div>
+                
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Sustentabilidade</h5>
-                        <p class="card-text">Preocupamo-nos com o impacto ambiental e social das nossas atividades.</p>
+                        <h5 class="card-title">Downloads</h5>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-primary">Catálogo de Produtos</button>
+                            <button class="btn btn-outline-primary">Apresentação Empresarial</button>
+                            <button class="btn btn-outline-primary">Cases de Sucesso</button>
+                        </div>
                     </div>
                 </div>
             </div>
