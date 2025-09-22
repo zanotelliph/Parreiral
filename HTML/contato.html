@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Parreiral</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-wine fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-wine-bottle me-2"></i>
+                    PARREIRAL
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="diversos.html">Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="display-4 mb-4">Entre em Contato</h1>
+                
+                <!-- Formulário -->
+                <form class="mb-5">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nome" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="telefone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="assunto" class="form-label">Assunto</label>
+                        <select class="form-select" id="assunto">
+                            <option selected>Selecione um assunto</option>
+                            <option value="visita">Agendamento de Visita</option>
+                            <option value="evento">Cotação de Evento</option>
+                            <option value="produtos">Dúvidas sobre Produtos</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="newsletter">
+                        <label class="form-check-label" for="newsletter">Desejo receber newsletter</label>
+                    </div>
+                    <button type="submit" class="btn btn-wine btn-lg">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <div class="col-lg-4">
+                <!-- Informações de Contato -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">INFORMAÇÕES DE CONTATO</h5>
+                        <p><i class="fas fa-map-marker-alt me-2 text-wine"></i> Estrada do Vinhedo, 1234</p>
+                        <p><i class="fas fa-phone me-2 text-wine"></i> (11) 9999-9999</p>
+                        <p><i class="fas fa-envelope me-2 text-wine"></i> contato@parreiral.com</p>
+                        <p><i class="fas fa-clock me-2 text-wine"></i> Seg-Sex: 8h-18h</p>
+                    </div>
+                </div>
+
+                <!-- Mapa -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">ONDE ESTAMOS</h5>
+                        <div id="map" style="height: 300px; background-color: #f8f9fa; display: flex; align-items: center; justify-content: center; border-radius: 5px;">
+                            <div class="text-center">
+                                <i class="fas fa-map fa-3x text-wine mb-3"></i>
+                                <p>Mapa do Vinhedo Parreiral</p>
+                                <small>OpenStreetMap</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>TRABALHE CONOSCO</h5>
+                    <p>Envie seu CV para: rh@parreiral.com</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>CONTATO</h5>
+                    <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@parreiral.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
