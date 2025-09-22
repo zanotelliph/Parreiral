@@ -49,7 +49,7 @@ body {
     color: var(--gold) !important;
 }
 
-/* Carousel */
+/* Cirilo */
 .carousel-img {
     height: 500px;
     object-fit: cover;
@@ -61,7 +61,7 @@ body {
     padding: 20px;
 }
 
-/* Cards */
+/* TCG */
 .wine-card {
     transition: transform 0.3s, box-shadow 0.3s;
     border: none;
@@ -78,7 +78,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Accordion */
+/* Gaita */
 .accordion-button:not(.collapsed) {
     background-color: var(--wine);
     color: white;
@@ -89,7 +89,7 @@ body {
     border-color: var(--wine);
 }
 
-/* Formulário */
+/* Rastreador do Governo*/
 .form-control:focus {
     border-color: var(--wine);
     box-shadow: 0 0 0 0.2rem rgba(114, 47, 55, 0.25);
