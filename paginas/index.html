@@ -4,49 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parreiral - Vinhedos e Eventos</title>
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+
+    <!-- Seu CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
+
   <body>
+    <!-- NAVBAR -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-wine">
         <div class="container">
+          <!-- Logo -->
           <a class="navbar-brand" href="index.html">
-            <i class="fas fa-wine-bottle me-2"></i>
-            PARREIRAL
+            <i class="fas fa-wine-bottle me-2"></i> PARREIRAL
           </a>
 
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active" href="index.html">Home</a>
+          <!-- Botão hamburguer -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <a class="nav-link" href="sobre.html"> Sobre Nós </a>
-
-            <a class="nav-link" href="diversos.html"
-              >Eventos e Visitações
-            </a>
-
-            <a class="nav-link" href="contato.html">Contato</a>
+          <!-- Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="sobre.html">Sobre Nós</a>
+              <a class="nav-link" href="diversos.html">Eventos e Visitações</a>
+              <a class="nav-link" href="contato.html">Contato</a>
+            </div>
           </div>
         </div>
       </nav>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="container mt-4">
       <div class="row">
         <article class="col-lg-8">
           <div class="tutor-meta mb-4 p-3 bg-light rounded">
-            <small
-              ><i class="fas fa-user me-2 text-wine"></i>Publicado por: Vinícola
-              Parreiral | <i class="fas fa-calendar me-2 text-wine"></i>Data:
-              20/03/2024</small
-            >
+            <small>
+              <i class="fas fa-user me-2 text-wine"></i>Publicado por: Vinícola
+              Parreiral |
+              <i class="fas fa-calendar me-2 text-wine"></i>Data: 20/03/2024
+            </small>
           </div>
 
           <h1 class="display-5 mb-4">
@@ -65,14 +85,14 @@
               Desde então, temos nos dedicado à produção de vinhos, geleias e
               licores artesanais que carregam a essência da nossa terra.
             </p>
-
             <p>
               Localizados em uma região privilegiada, nossos vinhedos
               beneficiam-se de condições climáticas ideais para o cultivo de
               uvas especiais, garantindo qualidade superior em cada produto.
             </p>
           </div>
-          <!-- Cirilo -->
+
+          <!-- CAROUSEL -->
           <section class="mb-5">
             <div
               id="carouselParreiral"
@@ -105,6 +125,7 @@
             </div>
           </section>
 
+          <!-- OPINIÃO DE CLIENTES -->
           <section class="clientes-section mb-5">
             <h3 class="mb-4">
               <i class="fas fa-comments me-2 text-wine"></i>OPINIÃO DE CLIENTES
@@ -135,8 +156,10 @@
             </div>
           </section>
         </article>
-        <!-- Sobe e Desce-->
+
+        <!-- SIDEBAR -->
         <aside class="col-lg-4">
+          <!-- MENU RÁPIDO -->
           <nav class="sidebar-nav mb-4">
             <div class="card">
               <div class="card-header bg-wine text-white">
@@ -173,74 +196,13 @@
                   >
                     <i class="fas fa-calendar me-2 text-wine"></i>Eventos
                   </a>
-                 <!-- <a
-                    href="contato.html"
-                    class="list-group-item list-group-item-action"
-                  >
-                    <i class="fas fa-map-marker-alt me-2 text-wine"></i
-                    >Visite-nos
-                  </a>-->
                 </div>
               </div>
             </div>
           </nav>
-          <!-- TCG -->
+
+          <!-- MÍDIA -->
           <div class="card">
             <div class="card-header bg-wine text-white">
               <h5 class="mb-0">
-                <i class="fas fa-tv me-2"></i>NOSSA EMPRESA NA MÍDIA
-              </h5>
-            </div>
-            <div class="card-body">
-              <div class="media-item mb-3">
-                <i class="fas fa-newspaper me-2 text-wine"></i>
-                <span>Revista Vinho Brasil - Mar/2024</span>
-              </div>
-              <div class="media-item mb-3">
-                <i class="fas fa-tv me-2 text-wine"></i>
-                <span>Globo Rural - Especial Vinhedos</span>
-              </div>
-              <div class="media-item mb-3">
-                <i class="fas fa-podcast me-2 text-wine"></i>
-                <span>Podcast "Vinhos & Histórias"</span>
-              </div>
-              <div class="media-item">
-                <i class="fas fa-trophy me-2 text-wine"></i>
-                <span>Prêmio Melhor Vinho 2023</span>
-              </div>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </main>
-
-    <footer class="bg-dark text-light py-4 mt-5">
-       <div class="container">
-  <div class="row">
-    <div class="col-md-4">
-      <h5>TRABALHE CONOSCO</h5>
-      <p>Envie seu Currículo para: rh@parreiral.com</p>
-    </div>
-
-    <div class="col-md-4">
-      <h5>CONTATO</h5>
-      <p><i class="fas fa-phone"></i> (71) 40028922</p>
-      <p><i class="fas fa-envelope"></i> contato@parreiral.com</p>
-    </div>
-
-    <div class="col-md-4">
-      <h5>SIGA-NOS</h5>
-      <nav>
-        <a href="#"><i class="fab fa-facebook"></i> ParreiralBrasil</a><br>
-        <a href="#"><i class="fab fa-instagram"></i> parreiraloficial</a><br>
-        <!--<a href="#"><i class="fab fa-twitter"></i> Twitter</a>-->
-      </nav>
-    </div>
-  </div>
-</div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+                <i class="fas fa-tv me-2"></i
