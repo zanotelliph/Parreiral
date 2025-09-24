@@ -132,3 +132,9 @@ footer {
     padding-left: 10px;
     margin-bottom: 15px;
 }
+
+/* Ajusta as imagens para não invadir o aside */
+    .card-img-top {
+      object-fit: cover; /* Mantém proporção da imagem */
+      height: 250px;     /* Altura fixa para todas */
+    }
