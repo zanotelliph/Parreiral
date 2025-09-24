@@ -138,3 +138,8 @@ footer {
       object-fit: cover; /* Mantém proporção da imagem */
       height: 250px;     /* Altura fixa para todas */
     }
+
+    #titulo {
+      color: var(--wine);
+      
+    }
